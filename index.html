@@ -3,12 +3,12 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Cozinha do Rubbinho</title>
-<meta name="description" content="Links da Cozinha do Rubbinho — comida caseira em Águas Claras, DF. Endereço, cardápio, grupo de marmitas e Instagram.">
+<title>Rubbinho Grill · Espetinho e Hambúrguer</title>
+<meta name="description" content="Links do Rubbinho Grill — espetinho na brasa, jantinha e hambúrguer artesanal em Águas Claras, DF. Onde fica, pedido pelo WhatsApp, cardápio e Instagram.">
 <meta name="theme-color" content="#17110d">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Anton&family=Caveat:wght@600;700&family=Work+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Titan+One&family=Yellowtail&family=Work+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
   :root{
     --ink: #17110d;
@@ -76,17 +76,18 @@
 
   .brand-name{
     margin-top:1rem;
-    font-family:'Anton', sans-serif;
+    font-family:'Titan One', cursive;
     font-size:1.55rem; letter-spacing:0.055em; text-transform:uppercase;
     color:var(--paper); text-align:center; line-height:1.05;
   }
   .brand-tag{
     margin-top:0.15rem;
-    font-family:'Caveat', cursive; font-size:1.65rem;
+    font-family:'Yellowtail', cursive; font-size:1.65rem;
     color:var(--gold-soft); transform:rotate(-1.5deg); line-height:1;
   }
+  .chips{ margin-top:1rem; display:flex; flex-wrap:wrap; justify-content:center; gap:0.5rem; }
   .chip{
-    margin-top:1rem;
+    margin:0;
     display:inline-flex; align-items:center; gap:0.4rem;
     background:rgba(255,255,255,0.06);
     border:1px solid rgba(217,164,65,0.42);
@@ -137,7 +138,7 @@
   .gallery-head{
     width:100%; margin:2.3rem 0 0.9rem;
     display:flex; align-items:center; gap:0.7rem;
-    font-family:'Anton', sans-serif; font-size:0.82rem;
+    font-family:'Titan One', cursive; font-size:0.82rem;
     letter-spacing:0.16em; text-transform:uppercase; color:var(--gold-soft);
   }
   .gallery-head::before, .gallery-head::after{
@@ -151,10 +152,11 @@
     margin:0;                 /* <figure> tem margin padrão do UA e encolhe a célula da grade */
     position:relative; border-radius:0.85rem; overflow:hidden;
     border:1px solid rgba(217,164,65,0.28);
-    aspect-ratio:1/1; background:var(--ink-2);
+    aspect-ratio:1/1; background:radial-gradient(circle at 50% 40%, #3a2a1c 0%, var(--ink-2) 75%);
   }
   .shot img{
-    width:100%; height:100%; object-fit:cover;
+    width:100%; height:100%; object-fit:contain;
+    padding:0.9rem 0.9rem 2.2rem; box-sizing:border-box;
     transition: transform .55s var(--ease);
   }
   .shot:hover img{ transform:scale(1.07); }
@@ -162,7 +164,7 @@
     position:absolute; left:0; right:0; bottom:0;
     padding:1.5rem 0.6rem 0.55rem;
     background:linear-gradient(180deg, rgba(23,17,13,0) 0%, rgba(23,17,13,0.9) 62%);
-    font-family:'Caveat', cursive; font-size:1.15rem; line-height:1.1;
+    font-family:'Yellowtail', cursive; font-size:1.15rem; line-height:1.1;
     color:var(--gold-soft); text-align:center;
   }
 
@@ -196,25 +198,28 @@
 <main class="wrap">
 
   <div class="logo-glow up" style="--d:0">
-    <img src="img/logo.webp" alt="Cozinha do Rubbinho" width="900" height="507" fetchpriority="high">
+    <img src="img/logo.webp" alt="Rubbinho Grill" width="900" height="484" fetchpriority="high">
   </div>
 
-  <h1 class="brand-name up" style="--d:1">Cozinha do Rubbinho</h1>
-  <p class="brand-tag up" style="--d:2">comida caseira</p>
-  <p class="chip up" style="--d:3">📍 Águas Claras, DF</p>
+  <h1 class="brand-name up" style="--d:1">Rubbinho Grill</h1>
+  <p class="brand-tag up" style="--d:2">espetinho &amp; hambúrguer</p>
+  <div class="chips up" style="--d:3">
+    <p class="chip">📍 Águas Claras, DF</p>
+    <p class="chip">🕖 Seg a sáb · 19h às 22h30</p>
+  </div>
 
   <nav class="links" aria-label="Links principais">
-    <a class="linkbtn up" style="--d:4" href="https://share.google/F5ouCm4ZDeyrWC4mG" target="_blank" rel="noopener">
+    <a class="linkbtn up" style="--d:4" href="https://maps.app.goo.gl/5s3kuVMgvNhM9VF77" target="_blank" rel="noopener">
       <span class="linkbtn-icon" aria-hidden="true">📍</span>
       <span class="linkbtn-text">
-        <span class="linkbtn-title">Endereço</span>
-        <span class="linkbtn-sub">Green Park Center — ver rota no mapa</span>
+        <span class="linkbtn-title">Onde fica</span>
+        <span class="linkbtn-sub">Rua 19 Norte, em frente ao Balaio Caipira</span>
       </span>
       <svg class="linkbtn-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
     </a>
 
-    <a class="linkbtn up" style="--d:5" href="https://wa.me/5561985905050?text=Ol%C3%A1%2C%20quero%20fazer%20um%20pedido%20na%20Cozinha%20do%20Rubbinho" target="_blank" rel="noopener">
-      <span class="linkbtn-icon" aria-hidden="true">🍽️</span>
+    <a class="linkbtn up" style="--d:5" href="https://wa.me/5561985905050?text=Ol%C3%A1%2C%20quero%20fazer%20um%20pedido%20no%20Rubbinho%20Grill" target="_blank" rel="noopener">
+      <span class="linkbtn-icon" aria-hidden="true">🔥</span>
       <span class="linkbtn-text">
         <span class="linkbtn-title">Faça um Pedido</span>
         <span class="linkbtn-sub">Peça direto pelo WhatsApp</span>
@@ -222,59 +227,51 @@
       <svg class="linkbtn-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
     </a>
 
-    <a class="linkbtn up" style="--d:6" href="https://rubbinho-lp.vercel.app/" target="_blank" rel="noopener">
+    <a class="linkbtn up" style="--d:6" href="https://rubbinho-grill.vercel.app/" target="_blank" rel="noopener">
       <span class="linkbtn-icon" aria-hidden="true">📖</span>
       <span class="linkbtn-text">
         <span class="linkbtn-title">Cardápio</span>
-        <span class="linkbtn-sub">Pratos, parmegianas, bebidas e marmitex</span>
+        <span class="linkbtn-sub">Espetos, jantinha e hambúrgueres</span>
       </span>
       <svg class="linkbtn-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
     </a>
 
-    <a class="linkbtn up" style="--d:7" href="https://chat.whatsapp.com/FFrhNBVsotnIYyVy8zPvjf" target="_blank" rel="noopener">
-      <span class="linkbtn-icon" aria-hidden="true">💬</span>
-      <span class="linkbtn-text">
-        <span class="linkbtn-title">Entrar na Comunidade</span>
-        <span class="linkbtn-sub">Receba o prato do dia no WhatsApp</span>
-      </span>
-      <svg class="linkbtn-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
-    </a>
   </nav>
 
-  <h2 class="gallery-head up" style="--d:8">Da nossa cozinha</h2>
+  <h2 class="gallery-head up" style="--d:7">Direto da brasa</h2>
   <div class="gallery">
+    <figure class="shot up" style="--d:8">
+      <img src="img/espetos-leque.webp" alt="Espetos na brasa: alcatra, contrafilé, kafta, coração, queijo coalho e linguiça" width="900" height="1030" loading="lazy">
+      <figcaption>Espetos · R$13</figcaption>
+    </figure>
     <figure class="shot up" style="--d:9">
-      <img src="img/picanha-queijo.webp" alt="Picanha com queijo derretido, arroz, feijão, batata frita e salada" width="900" height="900" loading="lazy">
-      <figcaption>Picanha</figcaption>
+      <img src="img/jantinha.webp" alt="Jantinha com arroz, feijão tropeiro, mandioca, vinagrete e espeto" width="1000" height="613" loading="lazy">
+      <figcaption>Jantinha · R$25</figcaption>
     </figure>
     <figure class="shot up" style="--d:10">
-      <img src="img/parmegiana-carne-novo.webp" alt="Parmegiana de carne com molho, queijo, arroz e fritas" width="900" height="900" loading="lazy">
-      <figcaption>Parmegiana de carne</figcaption>
+      <img src="img/burgers-trio.webp" alt="Hambúrgueres artesanais simples, duplo e triplo" width="1400" height="683" loading="lazy">
+      <figcaption>Burgers · de R$15</figcaption>
     </figure>
     <figure class="shot up" style="--d:11">
-      <img src="img/frango-simples-novo.webp" alt="Filé de frango grelhado com arroz, feijão e salada" width="900" height="900" loading="lazy">
-      <figcaption>Filé de frango</figcaption>
-    </figure>
-    <figure class="shot up" style="--d:12">
-      <img src="img/marmitex-novo.webp" alt="Marmitex pronto para viagem" width="1200" height="1200" loading="lazy">
-      <figcaption>Marmitex</figcaption>
+      <img src="img/burger-triplo.webp" alt="Hambúrguer triplo com três carnes e três queijos" width="700" height="767" loading="lazy">
+      <figcaption>Triplo · R$35</figcaption>
     </figure>
   </div>
 
-  <div class="social up" style="--d:13">
-    <a class="ig" href="https://www.instagram.com/rubbinhogrill/" target="_blank" rel="noopener">
+  <div class="social up" style="--d:12">
+    <a class="ig" href="https://www.instagram.com/rubbinhogrill_janta/" target="_blank" rel="noopener">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
         <rect x="2" y="2" width="20" height="20" rx="5.5"/>
         <circle cx="12" cy="12" r="4.2"/>
         <circle cx="17.6" cy="6.4" r="1.1" fill="currentColor" stroke="none"/>
       </svg>
-      @rubbinhogrill
+      @rubbinhogrill_janta
     </a>
   </div>
 
-  <footer class="up" style="--d:14">
-    <span class="addr">Galeria do Edifício Green Park Center<br>Rua 20 Norte — Águas Claras, Brasília&nbsp;-&nbsp;DF</span>
-    © 2026 Cozinha do Rubbinho
+  <footer class="up" style="--d:13">
+    <span class="addr">Rua 19 Norte, Águas Claras<br>Estacionamento em frente ao Balaio Caipira<br>Seg a sáb · 19h às 22h30</span>
+    © 2026 Rubbinho Grill
   </footer>
 
 </main>
